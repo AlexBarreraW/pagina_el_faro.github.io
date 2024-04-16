@@ -1,0 +1,131 @@
+<!DOCTYPE html
+html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro - Periódico Local</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">	
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Agregamos un script externo -->
+	
+</head>
+
+<body>
+    <!-- Esta parte corresponde al título y el logotipo -->
+    <header>
+		<h1>Periódico “El Faro”</h1>
+        <img src="faro.jpg" width="400" height="300" alt="El Faro">
+        <!-- Div para mostrar la fecha y hora -->
+        <div id="fecha-hora"></div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="Deportes.html">Deportes</a></li>
+            <li><a href="Negocios.html">Negocios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de artículos de noticias -->
+    <section id="inicio">
+        <h2>Noticias Generales</h2>
+        <table>
+            <tr>
+                <td>
+                    <h3>Cómo sería la verdadera imagen de Jesús, según una Inteligencia Artificial</h3>
+                    <p>Actualidad Semana Santa</p>
+                    <p>Con la piel oscura, los ojos de color castaño y el pelo corto. Así eran los judíos que habitaron Medio Oriente en el siglo I, según la autora del libro ¿Cómo se veía Jesús?,
+					la neozelandesa Joan Taylor.
+					La historiadora propone que la imagen de Jesús que conocemos está alejada de la realidad. Tras siglos de eurocentrismo, explica Taylor, 
+					absorbimos la imagen más conocida de Jesús: un hombre blanco, barbudo, de cabello largo castaño claro y ojos de color azul.
+					Aunque es un retrato ya conocido por la mayoría de los 2.000 millones de cristianos que hay en el mundo, se trata de una recreación apenas verosímil, 
+					que debe haber tenido poco que ver con la realidad.</p>
+					
+					<img src="jesus.jpg" width="200" height="150">
+                </td>
+            </tr>
+			<table>
+            <tr>
+                <td>
+                    <h3>La comuna de los departamentos vacíos</h3>
+                    <p>Actualidad</p>
+                    <p>Cerca de un 40% de los apartamentos en Estación Central están desocupados, 
+					según corredores de propiedades. ¿Las razones? Ya nadie quiere arrendar en barrios como Toro Mazotte y Conde del Maule, 
+					por la inseguridad que hay en las calles. Una situación que presiona a quienes compraron como inversión y que, 
+					ni siquiera ofreciendo rebajas en torno al 20%, los corredores están pudiendo revertir.</p>
+                </td>
+            </tr>
+			<table>
+            <tr>
+                <td>
+                    <h3>¿China y Rusia cooperan para crear un nuevo orden mundial? La teoría que cada vez toma más fuerza</h3>
+                    <p>Actualidad Internacional</p>
+                    <p>China y Rusia son grandes aliados. Así se lo han mostrado al mundo en los últimos tiempos: el gigante asiático se ha mantenido firme al lado del Kremlin, 
+					pese a que inició una brutal guerra contra Ucrania.
+					“Se están produciendo cambios como no se veían hace 100 años y somos nosotros quienes los impulsamos, juntos”, 
+					le dijo Xi Jinping, presidente de China, al mandatario ruso Vladimir Putin, en una visita a Moscú.
+					Estos dos hombres planean “remodelar el mundo”. Esta es la tesis expuesta en reportaje de Deutsche Welle que, 
+					con la opinión de distintos analistas, tejió la explicación detrás del estrecho vínculo entre China y Rusia y explica cómo ninguna de estas potencias podría ser lo que son hoy, 
+					sin colaborar juntas.</p>
+                </td>
+            </tr>
+            
+        </table>
+        		
+		
+        <!-- Incluir video en esta parte -->
+		<h3>Comienzan los despidos por crisis en Huachipato: ministro Grau se reunió con sindicatos</h3>
+        <video controls>
+            <source src="Huachipato.mp4" type="video/mp4">
+            
+        </video> <br>
+		
+		
+
+        <!-- Incluir audio en esta parte -->
+		<h3>Crisis Siderúrgica Huachipato: Se viene PARO REGIONAL en el Biobío</h3>
+        <audio controls>
+            <source src="Biobío.mp3" type="audio/mpeg">
+            
+        </audio>
+		
+		 <!-- Contenedor dinámico para los artículos -->
+        <div id="contenedor-articulos"></div>
+        <!-- Formulario para agregar un artículo -->
+        <form id="formulario-articulo">
+            <label for="titulo-articulo">Título del artículo:</label>
+            <input type="text" id="titulo-articulo" required><br>
+            <label for="descripcion-articulo">Descripción del artículo:</label><br>
+            <textarea id="descripcion-articulo" required></textarea><br>
+            <button type="button" id="boton-agregar-articulo">Agregar Artículo</button>
+        </form>
+		
+    </section>
+	
+	<section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" required></textarea><br>
+            <button type="button" id="boton-enviar-contacto">Enviar</button>
+        </form>
+    </section>
+	
+</body>
+	
+        <p id="contador-articulos"></p>
+
+	<footer>
+        <p>&copy; 2024 El Faro</p>
+        <ul>
+            <li>Integrante 1: Alex Barrera Williams</li>
+            <li>Integrante 2: Jeremy Alexander Rupayan Cuevas</li>
+            <li>Integrante 3: Carlos Urbina Garcia</li>
+			<li>Integrante 4: Franco Giulianno Giglio Veas</li>
+        </ul>
+    </footer>
+	
+</html>	
