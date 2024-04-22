@@ -1,41 +1,51 @@
-<!DOCTYPE html
-html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro - Periódico Local</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">	
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script> <!-- Agregamos un script externo -->
-	
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo de estilos personalizados -->
 </head>
 
 <body>
-    <!-- Esta parte corresponde al título y el logotipo -->
-    <header>
-		
-			<script src="script.js"></script>
-	        <h1>Periódico “El Faro”</h1>
-			<img src="faro.jpg" width="400" height="300" alt="El Faro">
-			 <div id="fecha-hora"></div>
-			 
-    </header>
+    <section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h1 class="title">Periódico “El Faro”</h1>
+                </div>
+                <div class="column">
+                    <figure class="image is-128x128">
+                        <img src="faro.jpg" alt="Faro">
+                    </figure>
+                </div>
+                <!-- Agregar la fecha y hora aquí -->
+                <div id="hora-fecha-container" class="column is-pulled-right mr-3 mt-3">
+                    <span id="hora-fecha" class="is-size-6 has-text-right mt-3 mr-3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="Deportes.html">Deportes</a></li>
-        </ul>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item mr-3">Inicio</a> <!-- Margen a la derecha -->
+                <a href="Deportes.html" class="navbar-item">Deportes</a>
+            </div>
+        </div>
     </nav>
 
     <!-- Sección de artículos de noticias -->
-     <section id="negocios">
-        <h2>Noticias de Negocios/Emprendimiento</h2>
-        <table>
-            <tr>
-                <td>
-                    <h3>La Inteligencia Artificial se va a convertir en una aliada frente al fraude financiero</h3>
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-half">
+                <h3 class="title is-3">La Inteligencia Artificial se va a convertir en una aliada frente al fraude financiero</h3>
                     <p>Actualidad Financiera</p>
                     <p>A pesar del pánico inicial ante la llegada de la Inteligencia Artificial, que sacudió las empresas, 
 					los medios de comunicación y las conversaciones del día a día, ha resultado ser una de las herramientas digitales más esperanzadoras del futuro inmediato.
@@ -46,12 +56,9 @@ html lang="es">
 					y requieren para poder ser eliminados algunas herramientas eficientes en esa prevención del fraude.
 					Ante nosotros se abre la posibilidad de que la Inteligencia Artificial sea esta herramienta tan eficiente para eliminar los fraudes fiscales, 
 					y solo queda entender por qué y cómo puede convertirse en algo usado en cualquier empresa o proyecto.</p>
-                </td>
-            </tr>
-			<table>
-            <tr>
-                <td>
-                    <h3>Influencia entre emprendedores para crear un negocio</h3>
+            </div>
+                <div class="column is-half">
+					<h3 class="title is-3">Influencia entre emprendedores para crear un negocio</h3>
                     <p>Emprendimiento</p>
                     <p>El camino hacia el emprendimiento está plagado de desafíos, especialmente para las mujeres que buscan hacerse un hueco en el mundo de los negocios. 
 					A pesar de la creciente motivación por convertir pasiones en profesiones, cubrir necesidades sociales o identificar oportunidades de mercado únicas, 
@@ -60,12 +67,9 @@ html lang="es">
 					Este fenómeno no solo les hace dudar de sus éxitos y capacidades, 
 					sino que también influye negativamente en su confianza a la hora de emprender o incluso después de haber establecido su propio negocio. 
 					La inseguridad derivada de este síndrome representa uno de los principales retos a superar para muchas de ellas.</p>
-                </td>
-            </tr>
-			<table>
-            <tr>
-                <td>
-                    <h3>¿Qué es la nueva generación de “emprendedores verdes”?</h3>
+            </div>
+                <div class="column is-half">
+					<h3 class="title is-3">¿Qué es la nueva generación de “emprendedores verdes”?</h3>
                     <p>Emprendimiento</p>
                     <p>Apoyar el emprendimiento sostenible es, desde el año 2023, un objetivo bastante relevante en la agenda política, 
 					pero también en la actividad diaria de proyectos como la Fundación INCYDE. 
@@ -77,20 +81,24 @@ html lang="es">
 					es un paso obligatorio. Y para ello es esta entidad, con el apoyo de J.P. Morgan, 
 					quien apuesta por el emprendimiento sostenible como el futuro motor de la economía española, 
 					y quien está dispuesto a adelantarse a una tendencia que terminará por llegar al resto del panorama de nuestro país.</p>
-                </td>
-            </tr>
-				           
-        </table>
-    </section>
+				</div>
+		</div>		
+    </div>
+</section>
 	
-	<footer>
-        <p>&copy; 2024 El Faro</p>
-        <ul>
-            <li>Integrante 1: Alex Barrera Williams</li>
-            <li>Integrante 2: Jeremy Alexander Rupayan Cuevas</li>
-            <li>Integrante 3: Carlos Urbina Garcia</li>
-			<li>Integrante 4: Franco Giulianno Giglio Veas</li>
-        </ul>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 El Faro</p>
+            <ul>
+                <li>Integrante 1: Alex Barrera Williams</li>
+                <li>Integrante 2: Jeremy Alexander Rupayan Cuevas</li>
+                <li>Integrante 3: Carlos Urbina Garcia</li>
+                <li>Integrante 4: Franco Giulianno Giglio Veas</li>
+            </ul>
+        </div>
     </footer>
-	
-</html>	
+
+    <script src="script.js" defer></script>
+</body>
+</html>
